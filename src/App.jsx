@@ -7,19 +7,21 @@ import {
   NavLink,
 } from 'react-router-dom';
 
-import Home from "./components/home"
+import Home from "./components/Home"
 import Login from "./components/login"
 import Register from "./components/register"
+
+import "../src/scss/main.scss"
 
 class App extends Component {
   render(){
     return (
       <HashRouter>
-        <>
+        <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/login' component={Login} />
-          <Route exact path='/register' component={Register} />
-        </>  
+          <Route  path='/login' component={Login} />
+          <Route  path='/register' component={Register} />
+        </Switch>  
     </HashRouter> 
     )
   }
