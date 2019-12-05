@@ -27,17 +27,17 @@ class Navbar extends Component {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="section3" {...options}>
+              <Link to="section4" {...options}>
                 O nas
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="section4" {...options}>
+              <Link to="section5" {...options}>
                 Fundacja i organizacje
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="section5" {...options}>
+              <Link to="section6" {...options}>
                 Kontakt
               </Link>
             </li>

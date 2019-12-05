@@ -70,7 +70,9 @@ label {
 
 .form-text {
   height: 100px;
-  resize: none;
+  width: 100%;
+  // resize: none;
+  overflow-wrap: break-word;
 }
 ::placeholder {
   opacity: 0.5;
