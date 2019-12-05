@@ -7,18 +7,24 @@
      display: flex;
     //  justify-content: space-between;
      font-size: 18px;
-     align-content: stretch;
-     
+     align-content: stretch;     
 }
 
 .nav-item{
+    display: block;
+    height: 50px;
     padding: 10px;
     margin-left: 10px;
     margin-left: 5px;
     transition: all .3s;
-    border: 0px solid #3C3C3C;
+    border: 3px solid transparent;
     height: 20px;
     text-align: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
 }
 
 .nav-item:hover{

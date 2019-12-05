@@ -21,26 +21,13 @@ class Login extends Component {
 
         <div className="login-box">
           <div className="login-title">
-            <h1>Zaloguj się</h1>
+            <h1>Wylogowanie nastąpiło pomyślnie!</h1>
           </div>
           <div className="deco"></div>
-          <div className="login-form">
-            <form action="">
-              <label htmlFor="email">
-                Email
-                <input type="email" name="email" id="email" />
-              </label>
-              <label htmlFor="password">
-                Hasło
-                <input type="password" name="password" id="password" />
-              </label>
-            </form>
+          <div>
+              <Link to="/">Strona główna</Link>
           </div>
-          <div className="login-btns">
-            <Link to="/register">Zarejestruj się</Link>
-            <Link to="/login">Zaloguj się</Link>
           </div>
-        </div>
       </>
     );
   }

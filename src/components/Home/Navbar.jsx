@@ -1,57 +1,51 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import { Link } from "react-scroll";
+import { NavLink } from "react-router-dom";
+
+const options = {
+  activeClass: "active",
+  spy: true,
+  smooth: true,
+  offset: 70,
+  duration: 500
+};
 
 class Navbar extends Component {
-    render() {
-        return (
-            <nav className="nav" id="navbar">
-                <div className="nav-content">
-                    <ul className="nav-items">
-                           <Link 
-                            activeClass="active"
-                            to="section1"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration= {500}
-                           ><li className="nav-item">Start</li></Link> 
-                            <Link
-                            activeClass="active"
-                            to="section2"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration= {500}
-                            ><li className="nav-item">O co chodzi?</li></Link>
-                            <Link
-                             activeClass="active"
-                             to="section3"
-                             spy={true}
-                             smooth={true}
-                             offset={-70}
-                             duration= {500}
-                            ><li className="nav-item">O nas</li></Link>
-                            <Link
-                             activeClass="active"
-                             to="section4"
-                             spy={true}
-                             smooth={true}
-                             offset={-70}
-                             duration= {500}
-                            ><li className="nav-item">Fundacja i organizacje</li></Link>
-                            <Link
-                             activeClass="active"
-                             to="section5"
-                             spy={true}
-                             smooth={true}
-                             offset={-70}
-                             duration= {500}
-                            ><li className="nav-item">Kontakt</li></Link>
-                    </ul>
-                </div>
-            </nav>
-        )
-    }
+  render() {
+    return (
+      <nav className="nav" id="navbar">
+        <div className="nav-content">
+          <ul className="nav-items">
+            <li className="nav-item">
+              <NavLink to="/" {...options}>
+                Start
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <Link to="section2" {...options}>
+                O co chodzi?
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="section3" {...options}>
+                O nas
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="section4" {...options}>
+                Fundacja i organizacje
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="section5" {...options}>
+                Kontakt
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    );
+  }
 }
 
 export default Navbar;

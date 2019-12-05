@@ -8,6 +8,7 @@ class Header extends Component {
     return (
       <>
         <header className="header" id="section1">
+
           <div className="header-content">
             <div className="header-logs">
               <Link to="/login">Zaloguj się</Link>

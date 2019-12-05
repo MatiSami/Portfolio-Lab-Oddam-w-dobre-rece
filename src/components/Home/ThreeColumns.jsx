@@ -1,5 +1,9 @@
 import React, {Component} from 'react';
 
+// const arr = [
+//   "dupa", "maryna"
+// ]
+
 class ThreeColumns extends Component {
   render(){
     return (
@@ -44,6 +48,7 @@ class ThreeColumns extends Component {
             </div>
           </div>
           {/* koniec boxu */}
+          {/* {arr.map(item => <div>{item}</div>)} */}
         </div>
       </section>
     )
